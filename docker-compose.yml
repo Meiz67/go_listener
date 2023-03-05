@@ -11,4 +11,5 @@ services:
 
 networks:
   go_network:
+    driver: bridge
     external: true
