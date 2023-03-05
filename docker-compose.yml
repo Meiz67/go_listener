@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: go_listener
+    build: ./
+    volumes:
+      - ./cmd:/app
+    networks:
+      - go_network
+
+networks:
+  go_network:
+    external: true
