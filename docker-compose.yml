@@ -2,14 +2,14 @@ version: "3.7"
 
 services:
   app:
-    container_name: go_listener
+    container_name: go_consumer
     build: ./
     volumes:
       - ./cmd:/app
     networks:
-      - go_network
+      - go_api_network
 
 networks:
-  go_network:
+  go_api_network:
     driver: bridge
     external: true

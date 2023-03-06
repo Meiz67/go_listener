@@ -17,7 +17,7 @@ type Client struct {
 }
 
 func main() {
-	fmt.Println("Listener started")
+	fmt.Println("Consumer started")
 
 	conn, err := amqp.Dial("amqp://crm:Tm9oOGVlc29qYWhYMkNhago=@mq.l-wine.ru:5672")
 	checkError(err)

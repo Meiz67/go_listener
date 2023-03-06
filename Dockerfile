@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY ./ ./
 
-CMD go build -o go_listener .; ./go_listener
+CMD go build -o go_consumer .; ./go_consumer
